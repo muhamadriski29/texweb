@@ -1,0 +1,12 @@
+/* Menyembunyikan scrollbar untuk kategori tapi tetap bisa di-scroll */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  overflow-x: clip;
+}
