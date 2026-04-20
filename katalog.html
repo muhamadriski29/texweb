@@ -7,35 +7,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "media",
-        theme: {
-          extend: {
-            colors: {
-              alftex: {
-                primary: "#2D1B4E" /* Deep Royal Purple */,
-                secondary: "#4A2B7D" /* Lighter Royal Purple */,
-                accent: "#D4AF37" /* Elegant Metallic Gold */,
-                bg: "#FDFCFE" /* Off-white dengan hint ungu */,
-                card: "#FFFFFF",
-              },
-            },
-            // Animasi shimmer tunggal
-            animation: {
-              shimmer: "shimmer 3s linear infinite",
-            },
-            keyframes: {
-              shimmer: {
-                from: { backgroundPosition: "200% center" },
-                to: { backgroundPosition: "-200% center" },
-              },
-            },
-          },
-        },
-      };
-    </script>
+    <link href="./dist/output.css" rel="stylesheet" />
   </head>
   <body class="font-sans antialiased bg-white text-gray-800 dark:bg-slate-900 dark:text-gray-100 overflow-x-clip transition-colors duration-300">
     <header class="bg-white shadow-sm sticky top-0 z-40 border-b border-purple-100 opacity-0 -translate-y-full transition-all duration-1000 ease-out dark:bg-slate-900/95 dark:border-slate-800">
